@@ -1,0 +1,257 @@
+.banner {
+  position: relative;
+  width: 1342px;
+  height: 668px;
+  margin-bottom: 20px;
+}
+
+.banner-poster {
+  position: relative;
+  width: 1342px;
+  height: 668px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  
+  color: white;
+}
+
+.banner-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.banner-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.banner-buttons button {
+  margin-right: 10px;
+}
+
+.ott-platform {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.signup-box h2 {
+  margin-bottom: 10px;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box label {
+  margin-bottom: 5px;
+}
+
+.signup-box input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.signup-box button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background-color: #333;
+  color: white;
+}
+
+.movie-grid,
+.series-grid,
+.documentary-grid,
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.movie-poster,
+.series-poster,
+.documentary-poster,
+.trending-poster {
+  position: relative;
+}
+
+.movie-poster img,
+.series-poster img,
+.documentary-poster img,
+.trending-poster img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-description,
+.series-description,
+.documentary-description,
+.trending-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.movie-poster:hover .movie-description,
+.series-poster:hover .series-description,
+.documentary-poster:hover .documentary-description,
+.trending-poster:hover .trending-description {
+  opacity: 1;
+}
+
+.movie-description h2,
+.series-description h2,
+.documentary-description h2,
+.trending-description h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.movie-description p,
+.series-description p,
+.documentary-description p,
+.trending-description p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.movie-description button,
+.series-description button,
+.documentary-description button,
+.trending-description button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ott-platform {
+    padding: 10px;
+  }
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}

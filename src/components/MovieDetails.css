@@ -1,0 +1,42 @@
+.movie-details {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .movie-poster {
+    width: 1342px;
+    height: 668px;
+    margin-right: 20px;
+  }
+  
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movie-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .movie-description {
+    margin-top: 20px;
+  }
+  
+  .movie-buttons {
+    margin-top: 20px;
+  }
+  
+  .similar-movies {
+    display: flex;
+  }
+  
+  .similar-movie {
+    margin-right: 10px;
+  }
+  
+  .similar-movie-image {
+    width: 100px;
+    height: 150px;
+  }
+  

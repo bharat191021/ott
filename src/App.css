@@ -1,0 +1,65 @@
+.ott-container {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.trending {
+  margin-top: 20px;
+}
+
+.trending-content {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.trending-poster {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 10px;
+  scroll-snap-align: start;
+}
+
+.trending-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-description {
+  margin-top: 10px;
+}
+
+.movie-description h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.movie-description p {
+  margin: 8px 0;
+  font-size: 12px;
+}
+
+.movie-description button {
+  margin-top: 8px;
+  padding: 4px 8px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .trending-content {
+    justify-content: flex-start;
+  }
+
+  .trending-poster {
+    width: 200px;
+  }
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+    .media-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .watchlist-media {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
