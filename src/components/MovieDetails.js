@@ -48,36 +48,55 @@ const MovieDetails = ({ movie, handleAddToWatchlist }) => {
 
   return (
     <div className="movie-details">
-      <div>
+      <div className="banner">
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt={movie.title}
-          className="movie-poster"
+          className="banner-poster"
         />
-        <div className="movie-description">
-          <h3 className="movie-title">{movie.title}</h3>
-          <p>{movie.overview}</p>
-          <div className="movie-buttons">
-            <button style={{ marginRight: '10px' }}>Play</button>
-            <button style={{ marginRight: '10px' }}>Share</button>
-            <button onClick={() => handleAddToWatchlist(movie)}>Add to Watchlist</button>
+        <div className="banner-overlay">
+          <div className="banner-content">
+            <h3 className="banner-title">{movie.title}</h3>
+            <p className="banner-description">{movie.overview}</p>
+            <div className="banner-buttons">
+              <button onClick={handlePlay} style={{ marginRight: '10px' }}>
+                Play
+              </button>
+              <button style={{ marginRight: '10px' }}>Share</button>
+              <button onClick={() => handleAddToWatchlist(movie)}>Add to Watchlist</button>
+            </div>
           </div>
         </div>
       </div>
-  
+
+      {isPlaying && videoKey && (
+        <div className="video-player">
+          <ReactPlayer
+            url={`https://www.youtube.com/watch?v=${videoKey}`}
+            width="100%"
+            height="100%"
+            controls
+            playing
+          />
+        </div>
+      )}
+
       <div className="similar-movies">
-        {similarMovies.map((similarMovie) => (
-          <div key={similarMovie.id} className="similar-movie">
-            <img
-              src={`https://image.tmdb.org/t/p/w200${similarMovie.poster_path}`}
-              alt={similarMovie.title}
-              className="similar-movie-image"
-            />
-            <p>{similarMovie.title}</p>
-          </div>
-        ))}
+        <div className="similar-movies-row">
+          {similarMovies.map((similarMovie) => (
+            <div key={similarMovie.id} className="similar-movie">
+              <img
+                src={`https://image.tmdb.org/t/p/w200${similarMovie.poster_path}`}
+                alt={similarMovie.title}
+                className="similar-movie-image"
+              />
+              <p>{similarMovie.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
-        }  
+};
+
 export default MovieDetails;
