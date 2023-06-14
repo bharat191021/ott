@@ -370,22 +370,22 @@ const OTTPlatform = () => {
       <footer class="footer">
   <div class="footer-links">
     <div class="footer-column">
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Help Center</a>
-      <a href="#">Career</a>
+      <a href="https://www.example.com">About Us</a>
+      <a href="https://www.example.com">Contact Us</a>
+      <a href="https://www.example.com">Help Center</a>
+      <a href="https://www.example.com">Career</a>
     </div>
     <div class="footer-column">
-      <a href="#">Account</a>
-      <a href="#">Manage Account</a>
-      <a href="#">Buy Gift Card</a>
-      <a href="#">Redeem Gift Card</a>
+      <a href="https://www.example.com">Account</a>
+      <a href="https://www.example.com">Manage Account</a>
+      <a href="https://www.example.com">Buy Gift Card</a>
+      <a href="https://www.example.com">Redeem Gift Card</a>
     </div>
     <div class="footer-column">
-      <a href="#">Privacy</a>
-      <a href="#">Terms and Conditions</a>
-      <a href="#">Cookies</a>
-      <a href="#">FAQ</a>
+      <a href="https://www.example.com">Privacy</a>
+      <a href="https://www.example.com">Terms and Conditions</a>
+      <a href="https://www.example.com">Cookies</a>
+      <a href="https://www.example.com">FAQ</a>
     </div>
   </div>
 </footer>

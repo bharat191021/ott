@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import OTTPlatform from './components/OTTPlatform';
-import MovieDetailsPage from './components/MovieDetails';
+
 
 const App = () => {
   return (
