@@ -10,12 +10,12 @@ const OTTPlatform = () => {
   const [documentaries, setDocumentaries] = useState([]);
   const [categories, setCategories] = useState([]);
   const [activeTab, setActiveTab] = useState('trending');
-  const [watchlist, setWatchlist] = useState([]);
+  const [ setWatchlist] = useState([]);
   const [trendingMovies, setTrendingMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [bannerPoster, setBannerPoster] = useState('');
   const [showSignUpBox, setShowSignUpBox] = useState(false);
-  const [selectedPoster, setSelectedPoster] = useState(null);
+  
     const [selectedMovie, setSelectedMovie] = useState(null);
 
   

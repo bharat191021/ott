@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "ott",
+			"path": "../../../Mygitproject/ott"
+		}
+	],
+	"settings": {}
+}
