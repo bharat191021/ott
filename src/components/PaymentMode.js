@@ -30,7 +30,7 @@ const PaymentMode = () => {
     // Open Razorpay payment form
     if (selectedPlan) {
       // Calculate the amount based on the selected plan
-      const amount = calculateAmount(selectedPlan);
+      
 
       // Set the visibility of the payment component
       setShowPayment(true);
